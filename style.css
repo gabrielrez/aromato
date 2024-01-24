@@ -134,6 +134,11 @@ main {
   margin-top: 32px;
 }
 
+.main-img img {
+  min-height: 536px;
+  object-fit: cover;
+}
+
 .grains {
   background-color: #F7F7F7;
 }
@@ -321,6 +326,11 @@ main {
   .grains-title,
   .coffees-title {
     margin-bottom: 32px;
+    font-size: 2.5rem;
+  }
+
+  .grain-title {
+    font-size: 1.5rem;
   }
 
   .coffees-box {
@@ -334,11 +344,20 @@ main {
   .coffee {
     margin-top: 48px;
   }
+
+  .coffee:first-child {
+    margin-top: 0px;
+  }
 }
 
 @media(max-width:500px) {
   .main-title {
     font-size: 3rem;
+    text-align: left;
+  }
+
+  .main-info {
+    text-align: left;
   }
 
   .main-text {
@@ -356,7 +375,24 @@ main {
 }
 
 @media(max-width: 400px) {
+
+  .grains-container,
+  .coffes-container {
+    padding-top: 40px;
+  }
+
+  .grains-title,
+  .coffees-title {
+    font-size: 2rem;
+  }
+
   .tabs img {
     max-width: 80px;
+  }
+}
+
+@media(max-width: 340px) {
+  .tabs img {
+    max-width: 60px;
   }
 }
